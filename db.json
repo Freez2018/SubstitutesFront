@@ -7,15 +7,31 @@
     },
     {
       "id": 2,
+      "name": "chocolate bar1",
+      "volume": "25"
+    },
+    {
+      "id": 3,
+      "name": "chocolate bar2",
+      "volume": "25"
+    },
+    {
+      "id": 4,
       "name": "Orange juce",
       "volume": "27"
     }
   ],
-  "comments": [
+  "substitutes": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id":1,
+    "name": "protein bar",
+    "volume": 2,
+    "description" :"string",
+    "BaseProductId":1,
+    "Rate1":"4.5",
+    "Rate2":"5",
+    "Rate3":"4",
+    "TotalRate":"5"
     }
   ],
   "profile": {
