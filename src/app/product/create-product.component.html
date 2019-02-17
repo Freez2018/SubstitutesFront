@@ -1,0 +1,37 @@
+<form [formGroup]="productForm"  (ngSubmit)="onSubmit()" class="form-horizontal">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Create Product</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group" >       
+        <label class="col-sm-2 control-label" for="fullName"> Name</label>       
+        <div class="col-sm-8">
+          <input id="fullName" formControlName="name" type="text" class="form-control">
+        </div>
+        <small class="alert-danger" [hidden]="productForm.controls.name.valid || (productForm.controls.name.pristine )">
+             Name is Required.
+        </small>
+        <span class="alert-danger"  [hidden]="productForm.controls.name.valid || (productForm.controls.name.pristine ) ">
+            Name length is not valid
+        </span>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label" for="email">Volume</label>
+        <div class="col-sm-8">
+          <input id="email" formControlName="volume" type="text" class="form-control">
+        </div>
+      </div>
+
+    </div>
+    <div class="panel-footer">
+        <div class="btn-toolbar">
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn btn-primary" type="button"
+                (click)="onLoadDataClick()">Load Data</button>
+      </div>
+      
+    </div>
+  </div>
+</form>

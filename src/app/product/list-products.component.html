@@ -1,0 +1,45 @@
+<div>
+  <ul *ngIf="products" class="list-group">
+    <li *ngFor="let item of products" class="list-group-item">
+     <span>{{item.name}}</span> <span>{{item.volume}}</span> <span></span>
+    </li>
+  </ul>
+</div>
+
+<table class="table table-striped mat-elevation-z8 lessons-table" *ngIf="products" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
+    <thead>
+      <tr>
+        <th class="text-nowrapCustom col-sm-3">
+          <mfDefaultSorter  by="name">name</mfDefaultSorter>
+        </th>
+        <th class="text-nowrapCustom col-sm-3">
+          <mfDefaultSorter by="description">description</mfDefaultSorter>
+        </th>
+        <th  class="text-nowrapCustom col-sm-3">
+          <mfDefaultSorter by="volume">volume</mfDefaultSorter>
+        </th>
+        <th  class="text-nowrapCustom col-sm-3">
+           Details
+        </th>
+        <th  class="text-nowrapCustom col-sm-3">
+         Get Substitutes
+        </th>       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of mf.data" >
+        <td class="col-sm-3">{{item.name}}</td>
+        <td class="col-sm-3">{{item.description}}</td>
+        <td class="col-sm-3">{{item.volume}}</td>
+        <td class="col-sm-3"><a href="#">Details</a></td>
+        <td class="col-sm-3"><span (click)="getSubstitutesForProduct(($item.id))">Get Substitutes</span> </td>        
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">
+          <mfBootstrapPaginator [rowsOnPageSet]="[5,10,25]"></mfBootstrapPaginator>
+        </td>
+      </tr>
+    </tfoot>
+  </table>

@@ -1,0 +1,7 @@
+.text-nowrapCustom{
+    width: auto !important;
+}
+.col-sm-3 {
+    flex: 0 0 25%;
+    width: auto !important;
+}
