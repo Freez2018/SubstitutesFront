@@ -6,10 +6,10 @@
     width: auto !important;
 }
 .table > tbody > tr:nth-child(even) > td, .table > tbody > tr:nth-child(even) > th {
-    background-color:rgba(255, 0, 0, 0.6);
-    color: white;
+    background-color:rgb(255, 255, 255, 0.7);
+    /* color: white; */
  } 
  .table > thead > tr {
-     background-color: crimson;
+     background-color: #2980B9;
      color: white;
  } 
