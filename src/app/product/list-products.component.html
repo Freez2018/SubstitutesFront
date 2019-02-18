@@ -6,17 +6,17 @@
   </ul>
 </div>
 
-<table class="table table-striped mat-elevation-z8 lessons-table" *ngIf="products" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
+<table class="table mat-elevation-z8 lessons-table" *ngIf="products" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
     <thead>
       <tr>
         <th class="text-nowrapCustom col-sm-3">
-          <mfDefaultSorter  by="name">name</mfDefaultSorter>
+          <mfDefaultSorter  by="name">Name</mfDefaultSorter>
         </th>
         <th class="text-nowrapCustom col-sm-3">
-          <mfDefaultSorter by="description">description</mfDefaultSorter>
+          <mfDefaultSorter by="description">Description</mfDefaultSorter>
         </th>
         <th  class="text-nowrapCustom col-sm-3">
-          <mfDefaultSorter by="volume">volume</mfDefaultSorter>
+          <mfDefaultSorter by="volume">Volume</mfDefaultSorter>
         </th>
         <th  class="text-nowrapCustom col-sm-3">
            Details
