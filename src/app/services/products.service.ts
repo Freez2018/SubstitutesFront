@@ -11,7 +11,7 @@ import { HttpParams } from "@angular/common/http";
 })
 export class ProductsService {
 
-  products: Product[];
+  products: Product[] ;
 
   constructor(private http:HttpClient) { }  
 

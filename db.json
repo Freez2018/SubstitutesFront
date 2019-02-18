@@ -24,7 +24,7 @@
   "substitutes": [
     {
       "id":1,
-    "name": "protein bar",
+    "name": "protein bar1",
     "volume": 2,
     "description" :"string",
     "BaseProductId":1,
