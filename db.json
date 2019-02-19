@@ -19,6 +19,11 @@
       "id": 4,
       "name": "Orange juice",
       "volume": "27"
+    },
+    {
+      "id": 5,
+      "name": "Strawberry juice",
+      "volume": "25"
     }
   ],
   "substitutes": [
