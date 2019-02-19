@@ -1,15 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
 <div class="container">
-  <nav class="navbar navbar-default">
-    <ul class="nav navbar-nav">
-      <li>
-        <a routerLinkActive="active" routerLink="list">List</a>
-      </li>
-      <li>
-        <a routerLinkActive="active" routerLink="create">Create</a>
-      </li>        
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"> 
+          <i class="fas fa-apple-alt"></i>
+          SugarlesS                    
+      </a>    
+      <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLinkActive="active" routerLink="list">List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="create">Create</a>
+        </li>        
+      </ul>    
   </nav>
   <router-outlet></router-outlet>
 </div>
