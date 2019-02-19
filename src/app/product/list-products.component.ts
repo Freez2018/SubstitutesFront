@@ -20,15 +20,14 @@ export class ListProductsComponent implements OnInit {
 
   ngOnInit() {
     this.productsService.getProducts()
-                        .subscribe(prods => {this.products = prods;}); 
-    console.log(this.products);
+                        .subscribe(prods => {this.products = prods;});     
   }
-  getSubstitutesForProduct(prodId: string){
+  getSubstitutesForProduct(BaseProductId: string){
     const params = new HttpParams()
-      .set('prodId', prodId);
-      //TODO: filter by params
+      .set('BaseProductId', BaseProductId);     
+      console.log(BaseProductId);
     this.productsService.getSubstitutes(params)
-      .subscribe(subs => this.subs = subs.filter(x => x.BaseProductId == prodId)); // filter should be on api part
+      .subscribe(subs => this.subs = subs.filter(x => x.BaseProductId == BaseProductId)); // filter should be on api part
         console.log(this.subs);
   }
 

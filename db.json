@@ -37,7 +37,18 @@
     "Rate2":"5",
     "Rate3":"4",
     "TotalRate":"5"
-    }
+    },
+    {
+        "id": 2,
+        "name": "Banana",
+        "description" : "",
+      "volume": "9",
+      "BaseProductId": "2",
+      "Rate1":"4.5",
+      "Rate2":"5",
+      "Rate3":"2.0",
+      "TotalRate": "4"
+      }
   ],
   "profile": {
     "name": "typicode3"

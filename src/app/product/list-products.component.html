@@ -1,10 +1,3 @@
-<div>
-  <ul *ngIf="products" class="list-group">
-    <li *ngFor="let item of products" class="list-group-item">
-     <span>{{item.name}}</span> <span>{{item.volume}}</span> <span></span>
-    </li>
-  </ul>
-</div>
 
 <table class="table mat-elevation-z8 lessons-table" *ngIf="products" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
     <thead>
@@ -15,7 +8,7 @@
         <th class="text-nowrapCustom col-sm-3">
           <mfDefaultSorter by="description">Description</mfDefaultSorter>
         </th>
-        <th  class="text-nowrapCustom col-sm-3">
+        <th class="text-nowrapCustom col-sm-3">
           <mfDefaultSorter by="volume">Volume</mfDefaultSorter>
         </th>
         <th  class="text-nowrapCustom col-sm-3">
@@ -32,7 +25,7 @@
         <td class="col-sm-3">{{item.description}}</td>
         <td class="col-sm-3">{{item.volume}}</td>
         <td class="col-sm-3"><a href="#">Details</a></td>
-        <td class="col-sm-3"><span (click)="getSubstitutesForProduct(($item.id))">Get Substitutes</span> </td>        
+        <td class="col-sm-3"><a href="/substitutesList?BaseProductId={{item.id}}">Get substitutes</a> </td>       
       </tr>
     </tbody>
     <tfoot>

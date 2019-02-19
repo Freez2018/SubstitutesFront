@@ -7,6 +7,7 @@ import { CreateProductComponent } from './product/create-product.component';
 import { ListProductsComponent } from './product/list-products.component';
 import {HttpClientModule} from '@angular/common/http';
 import { DataTableModule } from "angular-6-datatable";
+import { RouterModule } from '@angular/router';
 
 import { ListSubstitutesComponent } from './substitute/list-substitutes/list-substitutes.component';
 
@@ -22,7 +23,7 @@ import { ListSubstitutesComponent } from './substitute/list-substitutes/list-sub
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    DataTableModule
+    DataTableModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

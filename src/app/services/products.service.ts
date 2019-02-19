@@ -22,7 +22,7 @@ export class ProductsService {
 
   getSubstitutes(params: HttpParams):Observable<Substitute[]> //for product
   {
-       return this.http.get<Substitute[]>(environment.substitutesEndPoint);              
+       return this.http.get<Substitute[]>(environment.substitutesEndPoint, { params });              
   }
 
 }

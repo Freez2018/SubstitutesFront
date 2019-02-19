@@ -1,3 +1,4 @@
+
 <table class="table table-striped mat-elevation-z8 lessons-table" *ngIf="substitutes" [mfData]="substitutes" #mf="mfDataTable" [mfRowsOnPage]="5" >
     <thead>
       <tr>
@@ -11,8 +12,16 @@
           <mfDefaultSorter by="volume">volume</mfDefaultSorter>
         </th>
         <th  class="text-nowrapCustom col-sm-3">
-           Detailsr
-        </th>          
+           Taste
+        </th>    <th  class="text-nowrapCustom col-sm-3">
+           Consumption 
+         </th>  
+         <th  class="text-nowrapCustom col-sm-3">
+            Price
+         </th>  
+         <th  class="text-nowrapCustom col-sm-3">
+            Overall rate
+         </th>          
       </tr>
     </thead>
     <tbody>
@@ -20,7 +29,10 @@
         <td class="col-sm-3">{{item.name}}</td>
         <td class="col-sm-3">{{item.description}}</td>
         <td class="col-sm-3">{{item.volume}}</td>
-        <td class="col-sm-3"><a href="#">Details</a></td>      
+        <td class="col-sm-3">{{item.Rate1}}</td>     
+        <td class="col-sm-3">{{item.Rate2}}</td>     
+        <td class="col-sm-3">{{item.Rate3}}</td>     
+        <td class="col-sm-3">{{item.TotalRate}}</td>           
       </tr>
     </tbody>
     <tfoot>
@@ -31,3 +43,5 @@
       </tr>
     </tfoot>
   </table>
+
+  <p *ngIf="substitutes?.length == 0">No substitutes for this product yet</p>
