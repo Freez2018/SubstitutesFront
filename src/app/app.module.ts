@@ -8,7 +8,7 @@ import { ListProductsComponent } from './product/list-products.component';
 import {HttpClientModule} from '@angular/common/http';
 import { DataTableModule } from "angular-6-datatable";
 import { RouterModule } from '@angular/router';
-
+import { BarRatingModule } from "ngx-bar-rating";
 import { ListSubstitutesComponent } from './substitute/list-substitutes/list-substitutes.component';
 
 @NgModule({
@@ -23,7 +23,8 @@ import { ListSubstitutesComponent } from './substitute/list-substitutes/list-sub
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    DataTableModule    
+    DataTableModule,
+    BarRatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

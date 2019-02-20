@@ -29,10 +29,18 @@
         <td class="col-sm-3">{{item.name}}</td>
         <td class="col-sm-3">{{item.description}}</td>
         <td class="col-sm-3">{{item.volume}}</td>
-        <td class="col-sm-3">{{item.Rate1}}</td>     
-        <td class="col-sm-3">{{item.Rate2}}</td>     
-        <td class="col-sm-3">{{item.Rate3}}</td>     
-        <td class="col-sm-3">{{item.TotalRate}}</td>           
+        <td class="col-sm-3">
+          <bar-rating [(rate)]="item.Rate1" [max]="10" [theme]="'horizontal'" [readOnly]="true" [showText]="true"></bar-rating>
+        </td>     
+        <td class="col-sm-3">
+          <bar-rating [(rate)]="item.Rate2" [max]="10" [theme]="'horizontal'" [readOnly]="true" [showText]="true"></bar-rating>
+        </td>     
+        <td class="col-sm-3">
+          <bar-rating [(rate)]="item.Rate3" [max]="10" [theme]="'horizontal'" [readOnly]="true" [showText]="true"></bar-rating>
+        </td>     
+        <td class="col-sm-3">
+          <bar-rating [(rate)]="item.TotalRate" [max]="10"[theme]="'horizontal'" [readOnly]="true" [showText]="true"></bar-rating>
+        </td>           
       </tr>
     </tbody>
     <tfoot>
@@ -43,5 +51,5 @@
       </tr>
     </tfoot>
   </table>
-
+  
   <p *ngIf="substitutes?.length == 0">No substitutes for this product yet</p>
