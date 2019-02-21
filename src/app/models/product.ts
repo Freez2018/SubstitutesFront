@@ -3,4 +3,5 @@ export class Product {
     name: string;
     volume: string;
     description :string;
+    FK_category_categoryId : string;
   }

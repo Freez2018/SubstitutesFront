@@ -7,7 +7,8 @@ export const environment = {
   listProducts: 'http://localhost:3000/products',
   createProduct: 'http://localhost:3000/products',
   productsEndPoint: 'http://localhost:3000/products',
-  substitutesEndPoint:'http://localhost:3000/substitutes'
+  substitutesEndPoint:'http://localhost:3000/substitutes',
+  categoriesEndPoint:'http://localhost:3000/categories'
 };
 
 /*

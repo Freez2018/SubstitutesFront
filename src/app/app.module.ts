@@ -10,6 +10,8 @@ import { DataTableModule } from "angular-6-datatable";
 import { RouterModule } from '@angular/router';
 import { BarRatingModule } from "ngx-bar-rating";
 import { ListSubstitutesComponent } from './substitute/list-substitutes/list-substitutes.component';
+import {DropdownModule} from 'node_modules/angular-dropdown-component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ListSubstitutesComponent } from './substitute/list-substitutes/list-sub
     ReactiveFormsModule,
     HttpClientModule,
     DataTableModule,
-    BarRatingModule
+    BarRatingModule,
+    DropdownModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

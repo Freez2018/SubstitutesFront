@@ -1,5 +1,18 @@
 
-<table class="table mat-elevation-z8 lessons-table" *ngIf="products" [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
+<div>   
+     <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select category
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <!--TODO: instead of href do button onclick-->  
+          <button type="button" class="dropdown-item btn btn-link" (click)="getProducts()">All</button>   
+          <button *ngFor="let item of categories" type="button" class="dropdown-item btn btn-link" (click)="getProductsByCategory((item.id))">{{item.name}}</button>       
+        </div>
+      </div>
+</div>
+
+<table class="table mat-elevation-z8 lessons-table"  [mfData]="products" #mf="mfDataTable" [mfRowsOnPage]="5" >
     <thead>
       <tr>
         <th class="text-nowrapCustom col-sm-3">
@@ -12,10 +25,10 @@
           <mfDefaultSorter by="volume">Volume</mfDefaultSorter>
         </th>
         <th  class="text-nowrapCustom col-sm-3">
-           Details
+          Details
         </th>
         <th  class="text-nowrapCustom col-sm-3">
-         Get Substitutes
+          View Substitutes
         </th>       
       </tr>
     </thead>

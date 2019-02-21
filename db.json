@@ -3,54 +3,70 @@
     {
       "id": 1,
       "name": "chocolate bar",
-      "volume": "25"
+	    "description" : "",
+      "volume": "25",
+      "FK_category_categoryId" : "1"
     },
     {
       "id": 2,
-      "name": "chocolate bar1",
-      "volume": "25"
+      "name": "Orange juce",
+	    "description" : "",
+      "volume": "24",
+      "FK_category_categoryId" : "2"
     },
     {
       "id": 3,
-      "name": "chocolate bar2",
-      "volume": "25"
+      "name": "Vanilla Ice Cream",
+	    "description" : "",
+      "volume": "28",
+      "FK_category_categoryId" : "1"
     },
     {
-      "id": 4,
-      "name": "Orange juice",
-      "volume": "27"
+      "id": 6,
+      "name": "chocolate bar",
+	   "description" : "",
+      "volume": "25",
+      "FK_category_categoryId" : "1"
     },
     {
-      "id": 5,
-      "name": "Strawberry juice",
-      "volume": "25"
+      "name": "donat",
+	    "description" : "",
+      "volume": "30",
+      "id": 7,
+      "FK_category_categoryId" : "2"
     }
   ],
   "substitutes": [
     {
-      "id":1,
-    "name": "protein bar1",
-    "volume": 2,
-    "description" :"string",
-    "BaseProductId":1,
-    "Rate1":"4.5",
-    "Rate2":"5",
-    "Rate3":"4",
-    "TotalRate":"5"
-    },
-    {
-        "id": 2,
-        "name": "Banana",
-        "description" : "",
-      "volume": "9",
-      "BaseProductId": "2",
+      "id": 1,
+      "name": "protein bar",
+      "description" : "",
+      "volume": "2",
+      "BaseProductId": "1",
       "Rate1":"4.5",
       "Rate2":"5",
       "Rate3":"2.0",
       "TotalRate": "4"
-      }
+    },
+	{
+      "id": 2,
+      "name": "Banana",
+      "description" : "",
+      "volume": "9",
+      "BaseProductId": "2",
+      "Rate1":"4.5",
+      "Rate2":"7",
+      "Rate3":"3.0",
+      "TotalRate": "4"
+    }
   ],
-  "profile": {
-    "name": "typicode3"
-  }
+  "categories": [
+    {
+      "id": 1,
+      "name": "pastry"},
+    {
+      "id": 2,
+      "name": "bakery"
+    }
+  ]
 }
